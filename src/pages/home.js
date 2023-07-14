@@ -6,7 +6,6 @@ export default function createHomePage(element) {
     const homePage = document.createElement('div');
     const message = document.createElement('h2');
     const tableBtn = document.createElement('button'); 
-    const overlay = document.createElement('div');
 
     message.textContent = 'Indulge In French Elegance';
     message.setAttribute('id', 'message');
@@ -18,15 +17,11 @@ export default function createHomePage(element) {
     homePage.appendChild(message);
     homePage.appendChild(tableBtn);
 
-    overlay.classList.add('overlay');
-
-    element.appendChild(overlay);
     element.appendChild(homePage);
 }
 
 export function firstLoad() {
     const content = document.getElementById('content');
 
-    createTabs(content);
     createHomePage(content);
 }
