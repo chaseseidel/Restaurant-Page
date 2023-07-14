@@ -1,5 +1,4 @@
 import createTabs from "./tab";
-import createFooter from "./footer";
 
 export default function createHomePage(element) {
     createTabs(element);
