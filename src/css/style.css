@@ -72,3 +72,24 @@ body::-webkit-scrollbar {
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
     z-index: -1;
 }
+
+.container {
+    display: grid;
+    background-color: rgba(43, 43, 43, 0.2);
+    backdrop-filter: blur(12px);
+    border: 5px solid var(--gold-color);
+    gap: 50px;
+    margin: 0 20%;
+    padding: 50px 100px;
+}
+
+#page-title {
+    color: var(--gold-color);
+    text-align: center;
+    font-size: 3rem;
+}
+
+#page-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
