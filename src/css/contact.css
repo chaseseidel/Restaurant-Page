@@ -1,0 +1,27 @@
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label {
+    color: var(--gold-color);
+    font-size: 1.4rem;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    grid-column: span 2;
+    border-style: none;
+}
