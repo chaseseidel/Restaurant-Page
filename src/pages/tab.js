@@ -1,3 +1,5 @@
+import createButtonListeners from "./buttons";
+
 export default function createTabs(element) {
     const topBar = document.createElement('div');
     const restaurantName = document.createElement('h1');
@@ -6,6 +8,7 @@ export default function createTabs(element) {
     const menu = document.createElement('div');
     const about = document.createElement('div');
     const contact = document.createElement('div');
+    const overlay = document.createElement('div');
 
     restaurantName.textContent = 'Belle Étoile';
     restaurantName.setAttribute('id', 'restaurant-name');
@@ -36,5 +39,10 @@ export default function createTabs(element) {
     topBar.appendChild(restaurantName);
     topBar.appendChild(tabs);
 
+    overlay.classList.add('overlay');
+
+    element.appendChild(overlay);
     element.appendChild(topBar);
+
+    createButtonListeners(element);
 }
