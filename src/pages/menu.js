@@ -9,7 +9,7 @@ export default function createMenuPage(element) {
     menuTitle.textContent = 'Menu';
     menuTitle.setAttribute('id', 'menu-title');
 
-    menu.classList.add('menu');
+    menu.classList.add('container');
 
     menu.appendChild(menuTitle);
 
