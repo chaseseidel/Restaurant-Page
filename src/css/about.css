@@ -1,0 +1,19 @@
+.about-us {
+    display: grid;
+    background-color: rgba(43, 43, 43, 0.2);
+    border: 5px solid var(--gold-color);
+    gap: 50px;
+    margin: 0 20%;
+    padding: 50px 100px;
+}
+
+#about-title {
+    color: var(--gold-color);
+    text-align: center;
+    font-size: 3rem;
+}
+
+#about-content {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
