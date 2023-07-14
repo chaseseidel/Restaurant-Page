@@ -1,4 +1,5 @@
 import createTabs from "./tab";
+import createFooter from "./footer";
 
 export default function createHomePage(element) {
     createTabs(element);
@@ -18,6 +19,8 @@ export default function createHomePage(element) {
     homePage.appendChild(tableBtn);
 
     element.appendChild(homePage);
+
+    createFooter(content);
 }
 
 export function firstLoad() {

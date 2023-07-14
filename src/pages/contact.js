@@ -1,4 +1,5 @@
 import createTabs from "./tab";
+import createFooter from "./footer";
 
 export default function createContactPage(element) {
     createTabs(element);
@@ -50,6 +51,8 @@ export default function createContactPage(element) {
     contactPage.appendChild(info);
 
     element.appendChild(contactPage);
+    
+    createFooter(content);
 }
 
 const infoItem = (label, description)  => {

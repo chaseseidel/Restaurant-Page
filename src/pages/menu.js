@@ -1,4 +1,5 @@
 import createTabs from "./tab";
+import createFooter from "./footer";
 
 export default function createMenuPage(element) {
     createTabs(element);
@@ -37,6 +38,8 @@ export default function createMenuPage(element) {
     })
 
     element.appendChild(menu);
+
+    createFooter(content);
 }
 
 const menuItem = (name, description, price)  => {

@@ -1,4 +1,5 @@
 import createTabs from "./tab";
+import createFooter from "./footer";
 
 export default function createAboutPage(element) {
     createTabs(element);
@@ -25,4 +26,6 @@ export default function createAboutPage(element) {
     aboutPage.appendChild(text);
 
     element.appendChild(aboutPage);
+    
+    createFooter(content);
 }
