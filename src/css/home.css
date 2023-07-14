@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    background-color: rgba(129, 129, 129, 0.1);
+    color: white;
+    padding: 10px 75px;
+    margin: 25px 0;
+}
+
+#restaurant-name {
+    font-weight: 400;
+    font-size: 5rem;
+    margin-top: 15px;
+}
+
+.tabs {
+    display: flex;
+    gap: 50px;
+    justify-self: flex-end;
+    font-size: 1.5rem;
+}
+
+.tab {
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.tab:hover {
+    border-bottom: 2px solid white;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 25px;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+#message {
+    color: white;
+    font-weight: 100;
+}
+
+#table-btn {
+    height: 35px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+#table-btn:hover {
+    transform: scale(1.05);
+    background: rgba(129, 129, 129, 0.1);
+}
