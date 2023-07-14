@@ -19,10 +19,6 @@ export default function createHomePage(element) {
     homePage.appendChild(tableBtn);
 
     element.appendChild(homePage);
-
-    createFooter(content);
-    const footer = document.getElementById('footer');
-    footer.setAttribute('id', 'home-footer');
 }
 
 export function firstLoad() {
