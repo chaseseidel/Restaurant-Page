@@ -1,12 +1,8 @@
-import './style.css';
+import './css/home.css';
+import createTabs from './pages/tab';
+import createHomePage from './pages/home';
+import { firstLoad } from './pages/home';
 
-function component() {
-    const element = document.createElement('div');
-  
-    element.textContent = 'Hi'
-    element.classList.add('hello');
-  
-    return element;
-}
-  
-document.body.appendChild(component());
+const content = document.getElementById('content');
+
+firstLoad();
